@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <style>
+      *{
+        margin : 0px;
+        padding : 0px;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      body{
+        background-color: rgb(201, 201, 201);
+        width : 100%;
+        height : 667px;
+        padding : 2px;
+      }
+      img{
+        padding : 5px 5px;
+      }
+      #google{
+        width : 100%;
+        height : 25%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+      }
+      #google img{
+        width : 100%;
+        height : 120px;
+        object-fit: scale-down;
+      }
+      #naver{
+        width : 100%;
+        height : 25%;
+        background-color: rgb(195, 255, 190);
+        text-align: center;
+      }
+      #naver img{
+        width : 100%;
+        height : 120px;
+        object-fit: scale-down;
+      }
+      #youtube{
+        width : 100%;
+        height : 25%;
+        background-color: rgb(255, 210, 210);
+        text-align: center;
+      }
+      #youtube img{
+        width : 100%;
+        height : 120px;
+        object-fit: cover;
+        object-position: center center;
+      }
+      #daum{
+        width : 100%;
+        height : 25%;
+        background-color: rgb(255, 238, 206);
+        text-align: center;
+      }
+      #daum img{
+        width : 100%;
+        height : 120px;
+        object-fit: cover;
+        object-position: center center;
+      }
+      input{
+        width : 100%;
+        height : 40px;
+        text-align: center;
+        border-radius: 15px;
+        border : none;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="google">
+      <form target = "_blank" action = "https://www.google.com/search?q=%E3%85%97%E3%84%B7%E3%84%B1%E3%84%B7&safe=active&rlz=1C5CHFA_enKR943KR943&ei=xaasYK1D0qH5Bv3AoKAM">
+        <img src ="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+        <input id = "blank" type="text" placeholder="구글 검색" name = 'oq'>
+      </form>
+    </div>
+
+    <div id="naver">
+      <form target = "_blank" action = "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8">
+        <img src ="https://kmug.co.kr/data/file/design/1846294025_ntshf7Vk_992a3cae3dc7e29412d19099ec3381776daed803.png">
+        <input id = "blank" type="text" placeholder="네이버 검색" name = 'query'>
+      </form>
+    </div>
+
+    <div id="youtube">
+      <form target = "_blank" action = "https://www.youtube.com/results">
+        <img src ="https://i0.wp.com/mcea.co.kr/wp-content/uploads/2020/10/YouTube-Logo.png?ssl=1">
+        <input id = "blank" type="text" placeholder="유투브 검색" name = 'search_query'>
+      </form>
+    </div>
+
+    <div id="daum">
+      <form target = "_blank" action = "https://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&sugo=&sq=&o=">
+        <img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Daum_communication_logo.svg/1280px-Daum_communication_logo.svg.png">
+        <input id = "blank" type="text" placeholder="다음 검색" name = 'q'>
+      </form>
+    </div>
+
+  </body>
+</html>
